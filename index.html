@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee Website</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,24 +16,25 @@
             <h2 class="logo-text">☕Coffee</h2>
         </a>
         <ul class="nav-menu">
-            <li class="nav-items">
                 <button id="menu-close-button" class="fas fa-times"></button>
+
+            <li class="nav-items">
                 <a href="#" class="nav-link">Home</a>
             </li>
              <li class="nav-items">
-                <a href="#" class="nav-link">About</a>
+                <a href="#about" class="nav-link">About</a>
             </li>
              <li class="nav-items">
-                <a href="#" class="nav-link">Menu</a>
+                <a href="#menu" class="nav-link">Menu</a>
             </li> 
             <li class="nav-items">
-                <a href="#" class="nav-link">Testimonials</a>
+                <a href="#testimonials" class="nav-link">Testimonials</a>
             </li>
              <li class="nav-items">
-                <a href="#" class="nav-link">Gallery</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
             </li>
              <li class="nav-items">
-                <a href="#" class="nav-link">Contact</a>
+                <a href="#contact" class="nav-link">Contact</a>
             </li>
         </ul>
         <button id="menu-open-button" class="fas fa-bars"></button>
@@ -57,7 +59,7 @@
         </section>
                 
 <!--About Section-->
-        <section class="about-section">
+        <section class="about-section" id="about">
             <div class="section-content">
                 <div class="about-image-wrapper">
                     <img src="images/about-image.jpg" alt="About" class="about-image">
@@ -76,7 +78,7 @@
         </section>
 
 <!-- menu-section-->
- <section class="menu-section">
+ <section class="menu-section" id="menu">
     <h2 class="section-title">Our Menu</h2>
     <div class="section-content">
         <ul class="menu-list">
@@ -113,7 +115,133 @@
         </ul>
     </div>
  </section>
+ <!-- testimonials-section-->
+    <section class="testimonials-section" id="testimonials">
+        <h2 class="section-title">Testimonials</h2>
+        <div class="section-content">
+            <div class="slider-container swiper">
+            <div class="slider-wrapper">
+                <ul class="testimonial-list swiper-wrapper">
+                    <li class="testimonial swiper-slide">
+                     <img src="images/user5.jpg" alt="User" class="testimonial-image">
+                        <h3 class="name">Sarah Johnson</h3>
+                        <i class="feedback">"The best coffee shop in town! The ambiance is perfect for relaxing and enjoying a cup of coffee. Highly recommend the cappuccino!"</i>
+                    </li>
+                    
+                    <li class="testimonial swiper-slide">
+                     <img src="images/user2.jpg" alt="User" class="testimonial-image">
+                        <h3 class="name">Nova Harris</h3>
+                        <i class="feedback">Excellent quality! Fresh beans quick delivery. Highly recommend!"</i>
+                    </li>
+                    <li class="testimonial swiper-slide">
+                     <img src="images/User1.jpg" alt="User" class="testimonial-image">
+                        <h3 class="name">John Doe</h3>
+                        <i class="feedback">"A wonderful place to enjoy coffee and pastries. The staff is friendly and the atmosphere is cozy."</i>
+                    </li><li class="testimonial swiper-slide">
+                     <img src="images/user4.jpg" alt="User" class="testimonial-image">
+                        <h3 class="name">Emily Davis</h3>
+                        <i class="feedback">"A hidden gem! The pastries are to die for, and the coffee is always brewed to perfection."</i>
+                    </li><li class="testimonial swiper-slide">
+                     <img src="images/user3.jpg" alt="User" class="testimonial-image">
+                        <h3 class="name">Michael Smith</h3>
+                        <i class="feedback">"A cozy place with great coffee and friendly staff. The mocha is a must-try!"</i>
+                    </li>
+                </ul>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-slide-button swiper-button-prev"></div>
+                <div class="swiper-slide-button swiper-button-next"></div>
+            </div>
+            </div>
+        </div>
+     </section>
+      <!--Galler-section  -->
+      <section class="gallery-section" id="gallery">
+        <h2 class="section-title">Gallery</h2>
+        <div class="section-content">
+            <ul class="gallery-list">
+                <li class="gallery-items">
+                    <img src="images/good.jpg" alt="Gallery" class="gallery-image">
+                </li>
+                 <li class="gallery-items">
+                    <img src="images/food4.jpg" alt="Gallery" class="gallery-image">
+                </li>
+                 <li class="gallery-items">
+                    <img src="images/food6.webp" alt="Gallery" class="gallery-image">
+                </li>
+                 <li class="gallery-items">
+                    <img src="images/food1.jpg" alt="Gallery" class="gallery-image">
+                </li>
+                 <li class="gallery-items">
+                    <img src="images/food2.jpg" alt="Gallery" class="gallery-image">
+                </li>
+                 <li class="gallery-items">
+                    <img src="images/food8.webp" alt="Gallery" class="gallery-image">
+                </li>
+            </ul>
+        </div>
+      </section>
+<!--contact-section-->
+      <section class="contact-section" id="contact">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="section-content">
+            <ul class="contact-info-list">
+                <li class="contact-list">
+                    <i class="fa-solid fa-location-crosshairs"></i>
+                    <p>206, CivilLines, Prayagraj 211003, India</p>
+                </li>
+                <li class="contact-list">
+                    <i class="fa-regular fa-envelope"></i>
+                    <p>info@coffeeshopwebsite.com</p>
+                </li>
+                <li class="contact-list">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>(123) 345-76780</p>
+                </li>
+                <li class="contact-list">
+                    <i class="fa-regular fa-clock"></i>
+                    <p>Monday - Friday: 9:00 AM - 8:00 PM</p>
+                </li>
+                <li class="contact-list">
+                    <i class="fa-regular fa-clock"></i>
+                    <p>Saturday: Closed</p>
+                </li>
+                <li class="contact-list">
+                    <i class="fa-solid fa-globe"></i>
+                    <p>www.suyashpandey30.com</p>
+                </li>
+            </ul>
+
+            
+
+            <form action="#" class="contact-form">
+                <input type="text" placeholder="Your name" class="form-input" required>
+                <input type="email" placeholder="Your email" class="form-input" required>
+                <textarea placeholder="Your message" class="form-input" required></textarea>
+                <button  class="submit-button">Submit</button>
+            </form>
+        </div>
+      </section>
+
+      <footer class="footer-section">
+        <div class="section-content">
+            <p class="copyright-text">@2025 Coffee Shop. All rights reserved.</p>
+
+            <div class="social-link-list">
+                <a href="#" class="social-link" ><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="social-link" ><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#" class="social-link" ><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <p class="policy-text">
+                <a href="#" class="policy-link">Privacy policy</a>
+                <span class="separator">●</span>
+                   <a href="#" class="policy-link">Refund policy</a>
+            </p>
+      </footer>
+
     </main>
+<!--linking swiper-->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="index.js"></script>
 </body>
 </html>
